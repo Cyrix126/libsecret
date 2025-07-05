@@ -268,7 +268,7 @@ if get_option('introspection')
   ]
 
   pymod = import('python')
-  python3 = pymod.find_installation()
+  python3 = pymod.find_installation('python3')
   foreach _pytest : pytest_names
     py_test = meson.current_source_dir() / _pytest + '.py'
 
